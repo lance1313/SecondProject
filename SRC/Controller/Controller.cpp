@@ -5,7 +5,7 @@
  *      Author: jlin3312
  */
 
-//#include "Controller.h";
+#include "Controller.h"
 #include <iostream>
 #include <string>
 using namespace std;
@@ -13,6 +13,7 @@ Controller :: Controller()
 {
 	this->classCount = 21;
 	string computerCount;
+	this->className = "Jacob's class";
 
 }
 
@@ -30,14 +31,15 @@ int Controller ::getClassCount()
 void Controller :: start()
 {
 	cout << "Welcome to my new class this week" << endl;
-	for(string right; right == "windows";)
-		{
+	cout << className << endl;
+
 	cout << "the current value of class count is " << getClassCount() << endl;
 	int newCount;
+
 	cout << "choose a number for the class" << endl;
 	cin >> newCount;
 	this->setClassCount(newCount);
-	}
+
 	cout << "the current value of class count is " << getClassCount() << endl;
 }
 
@@ -47,4 +49,16 @@ void Controller :: computerCount()
 
 
 
+}
+
+void Controller :: setClassName(string className)
+{
+
+this ->className = classname;
+(*this).className = classname;
+}
+
+string Controller :: getClassName()
+{
+	return this->className;
 }

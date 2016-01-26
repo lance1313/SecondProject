@@ -7,11 +7,12 @@
 #include <string>
 #ifndef CONTROLLER_CONTROLLER_H_
 #define CONTROLLER_CONTROLLER_H_
-
+using namespace std;
 class Controller
 {
 private:
 	int classCount;
+	string className;
 
 public:
 	Controller();
