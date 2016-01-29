@@ -54,8 +54,8 @@ void Controller :: computerCount()
 void Controller :: setClassName(string className)
 {
 
-this ->className = classname;
-(*this).className = classname;
+this ->className = className;
+(*this).className = className;
 }
 
 string Controller :: getClassName()

@@ -20,6 +20,8 @@ public:
 	int getClassCount();
 	void start();
 	void computerCount();
+	string getClassName();
+	void setClassName(string className);
 
 };
 
